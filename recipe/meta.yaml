@@ -1,8 +1,8 @@
 {%set name = "Flask-FlatPages" %}
-{%set version = "0.6" %}
+{% set version = "0.7.1" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "b52d502579a0903c8660816a77c17f61f5cb526b5091fbe910a2ee17d2063bf2" %}
+{% set hash_val = "66a3bf799519bee349c57702488677dc71efdd157a6dcddc5891d4da49f76bc0" %}
 {%set build_num = "0" %}
 
 package:
