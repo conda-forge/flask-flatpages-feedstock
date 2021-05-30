@@ -3,7 +3,7 @@ About flask-flatpages
 
 Home: https://github.com/SimonSapin/Flask-FlatPages
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-flatpages-feedstock/blob/master/LICENSE.txt)
 
