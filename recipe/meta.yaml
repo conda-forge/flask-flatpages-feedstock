@@ -1,5 +1,5 @@
 {% set name = "Flask-FlatPages" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 66a3bf799519bee349c57702488677dc71efdd157a6dcddc5891d4da49f76bc0
+  sha256: 18b6305e367a3423c9b12a4dbca0900d18ed401c2f301e983790b4d023767d6f
 
 build:
   number: 0
@@ -31,7 +31,7 @@ test:
     - flask_flatpages
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'Provides flat static pages to a Flask application'
+  summary: Provides flat static pages to a Flask application
   dev_url: https://github.com/SimonSapin/Flask-FlatPages
   doc_url: https://flask-flatpages.readthedocs.io/en/latest/
 
