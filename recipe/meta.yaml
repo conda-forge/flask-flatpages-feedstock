@@ -1,5 +1,5 @@
 {% set name = "Flask-FlatPages" %}
-{% set version = "0.7.3" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18b6305e367a3423c9b12a4dbca0900d18ed401c2f301e983790b4d023767d6f
+  sha256: ee6b389a93558f66ae626cebc86ff99f299f6b972d2cdd8db9fb9b8a3deed1aa
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
