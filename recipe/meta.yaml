@@ -1,4 +1,4 @@
-{% set name = "Flask-FlatPages" %}
+{% set name = "flask-flatpages" %}
 {% set version = "0.8.2" %}
 
 package:
@@ -6,25 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-FlatPages-{{ version }}.tar.gz
   sha256: 403f0c574a308d45489bd02ac3abf618efc5f1f206b1f80603400580bcd0bc69
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - pip
     - python >=3.6
     - setuptools
-
+    - wheel
+    - pip
   run:
     - python >=3.6
-    - flask >=0.8
-    - pyyaml >=3.10
-    - markdown >=2.3.1
+    - flask >1.0
+    - jinja2 >=2.10.2
+    - markdown >=2.5
+    - pyyaml >5.3.1
     - six
 
 test:
