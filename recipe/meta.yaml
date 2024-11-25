@@ -1,18 +1,18 @@
 {% set name = "flask-flatpages" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-FlatPages-{{ version }}.tar.gz
-  sha256: 403f0c574a308d45489bd02ac3abf618efc5f1f206b1f80603400580bcd0bc69
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 615a33fb526fbd4773ec832ae325b6581361299ad48d70cd35f686315f57a263
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
